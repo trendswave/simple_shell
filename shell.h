@@ -10,3 +10,14 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <signal.h>
+/**
+* 
+*
+*
+*
+*/
+typedef struct environ_list
+{
+		char *str;
+			struct environ_list *next;
+} env_list;
