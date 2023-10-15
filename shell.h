@@ -21,3 +21,5 @@ typedef struct environ_list
 		char *str;
 			struct environ_list *next;
 } env_list;
+
+void sighand(int signum);
