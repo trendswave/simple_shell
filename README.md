@@ -8,3 +8,7 @@ _Read or watch:_
 
 _man or help:_
 * ```man_1_simple_shell``` (Run ```man_1_simple_shell``` as well)
+---
+## Learning Objectives:bulb:
+
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/2012/04/feynman-technique/), _without the help of Google:_
