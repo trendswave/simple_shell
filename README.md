@@ -50,14 +50,14 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 
 * The only difference is when you print an error, the name of the program must be equivalent to your ```argv[0]```
 
-Interactive
+Error with program sh:
 $ echo "qwerty" | /bin/sh
 /bin/sh: 1: qwerty: not found
 $ echo "qwerty" | /bin/../bin/sh
 /bin/../bin/sh: 1: qwerty: not found
 $
 
-Non interactive
+Error with program hsh:
 $ echo "qwerty" | ./hsh
 ./hsh: 1: qwerty: not found
 $ echo "qwerty" | ./././hsh
