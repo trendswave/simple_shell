@@ -41,10 +41,26 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * Your shell should not have any memory leaks
 * No more than 5 functions per file
 * All your header files should be include guarded
-* Use system calls only when you need to ([why?](https://www.quora.com/Why-are-system-calls-expensive-in-operating-systems))
+* Use system calls only when you need to why
+
 # More Info
 ## Output
 
 * Unless specified otherwise, your program must have the exact same output as sh (/bin/sh) as well as the exact same error output.
 
-* The only difference is when you print an error, the name of the program must be equivalent to your ```argv[0]``` (See below)
+* The only difference is when you print an error, the name of the program must be equivalent to your ```argv[0]```
+
+Interactive
+$ echo "qwerty" | /bin/sh
+/bin/sh: 1: qwerty: not found
+$ echo "qwerty" | /bin/../bin/sh
+/bin/../bin/sh: 1: qwerty: not found
+$
+
+Non interactive
+$ echo "qwerty" | ./hsh
+./hsh: 1: qwerty: not found
+$ echo "qwerty" | ./././hsh
+./././hsh: 1: qwerty: not found
+$
+
