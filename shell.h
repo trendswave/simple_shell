@@ -11,7 +11,8 @@
 #include <sys/types.h>
 #include <signal.h>
 /**
-*Struct evnirin_list - This is the singly linked list 
+*Struct - This is used to create ennvironmental variables
+*@environ_list - The alias for struct
 *@str: string - This allocates memory
 *@node: this is the pionter to the next node
 *
@@ -20,9 +21,9 @@
 typedef struct environ_list
 {
 	char *str;
-	struct environ_list *next;
+	struct environ_list *node;
 } env_list;
-
+extern char **environ;
 void sighand(int signum);
 int exec(pid_t child_pid, char **arr, int cnt);
 int way(char **dil, int cnt);
@@ -35,5 +36,5 @@ char *stringdup(const char *str);
 int _strlen(char *s);
 int str_comp(char **arr, int size);
 void env(void);
-char *str_concat(char *s1, char *s2, int flag)
+char *str_concat(char *s1, char *s2, int flag);
 
