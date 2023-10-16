@@ -11,15 +11,15 @@
 #include <sys/types.h>
 #include <signal.h>
 /**
-* 
-*
-*
-*
-*/
+ * 
+ *
+ *
+ *
+ */
 typedef struct environ_list
 {
-		char *str;
-			struct environ_list *next;
+	char *str;
+	struct environ_list *next;
 } env_list;
 
 void sighand(int signum);
@@ -30,6 +30,7 @@ int _how(char *data);
 int way(char **dil, int cnt);
 unsigned int get_pid(void);
 unsigned int get_ppid(void);
-char *stringdup(const char *str)
-int _strlen(char *s)
-int str_comp(char **arr, int size)
+char *stringdup(const char *str);
+int _strlen(char *s);
+int str_comp(char **arr, int size);
+void env(void);
