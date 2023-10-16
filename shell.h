@@ -27,4 +27,9 @@ int exec(pid_t child_pid, char **arr, int cnt);
 int way(char **dil, int cnt);
 char *_genv(const char *var);
 int _how(char *data);
-int way(char **dil, int cnt)
+int way(char **dil, int cnt);
+unsigned int get_pid(void);
+unsigned int get_ppid(void);
+char *stringdup(const char *str)
+int _strlen(char *s)
+int str_comp(char **arr, int size)

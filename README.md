@@ -102,14 +102,14 @@ $
 * fflush (man 3 fflush)
 
 
-#compilation
+## compilation
 Your shell will be compiled this way
 
 gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 
-#Testing 
+## Testing 
 
-<h1>your shell should work like this in the interactive mode:</h1>
+<h3>your shell should work like this in the interactive mode:</h3>
 
 $ ./hsh
 ($) /bin/ls
@@ -118,7 +118,7 @@ hsh main.c shell.c
 ($) exit
 $
 
-<h1>But also in non_interactive mode:</h1>
+<h3>But also in non_interactive mode:</h3>
 
 $ echo "/bin/ls" | ./hsh
 hsh main.c shell.c test_ls_2
@@ -132,11 +132,11 @@ hsh main.c shell.c test_ls_2
 hsh main.c shell.c test_ls_2
 $
 
-#How to use
+## How to use
 
 Run hsh as an executable file. ./hsh 
 
-#Authors
+## Authors
 
 ([Ololoda Akintoye](....))
 <br>
