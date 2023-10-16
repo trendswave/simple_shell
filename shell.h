@@ -11,11 +11,12 @@
 #include <sys/types.h>
 #include <signal.h>
 /**
- * 
- *
- *
- *
- */
+*Struct evnirin_list - This is the singly linked list 
+*@str: string - This allocates memory
+*@node: this is the pionter to the next node
+*
+* Description:  Node structure of singly linked list
+*/
 typedef struct environ_list
 {
 	char *str;
@@ -34,3 +35,5 @@ char *stringdup(const char *str);
 int _strlen(char *s);
 int str_comp(char **arr, int size);
 void env(void);
+char *str_concat(char *s1, char *s2, int flag)
+
