@@ -1,10 +1,10 @@
 #include "shell.h"
 /**
- *exec - fork, execute, wait function
- * @child_pid: child process
- * @arr: double pointer to array of strings
- * @cnt: the number of loops from getline
- * Return: 0 or -1
+ *
+ *
+ *
+ *
+ *
  */
 int exec(pid_t child_pid, char **arr, int cnt)
 {
