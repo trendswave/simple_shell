@@ -24,3 +24,4 @@ typedef struct environ_list
 
 void sighand(int signum);
 int exec(pid_t child_pid, char **arr, int cnt)
+int way(char **dil, int cnt)

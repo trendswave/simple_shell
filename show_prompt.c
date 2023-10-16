@@ -40,3 +40,63 @@ int exec(pid_t child_pid, char **arr, int cnt)
 														}
 							return (0);
 }
+/**
+*
+*
+*
+*/
+int way(char **dil, int cnt)
+{
+		char *path_original = _genv("PATH");
+			char *path_copy = stringdup(path_original);
+				char *token, *ptr = dil[0], *cats;
+					pid_t child_pid = 0;
+						int ex_status = 0;
+
+							if (_how(dil[0]) == 0)
+									{
+												if (access(dil[0], X_OK) == 0)
+															{
+																			ex_status = exec(child_pid, dil, cnt);
+																						free(path_copy);
+																								}
+														else
+																	{
+																					error(dil[0], cnt, 1);
+																								free(path_copy);
+																										}
+																return (ex_status);
+																	}
+								else
+										{
+													token = strtok(path_copy, ":");
+
+															while (token != NULL)
+																		{
+																						cats = str_concat(token, ptr, 1);
+																									if (_how(cats) == 0)
+																													{
+																																		if (access(cats, X_OK) == 0)
+																																							{
+																																													dil[0] = cats;
+																																																		ex_status = exec(child_pid, dil, cnt);
+																																																							free(cats);
+																																																												free(path_copy);
+																																																																	return (ex_status);
+																																																																					}
+																																						else
+																																											{
+																																																	/* files exist, but access is denied */
+																																																	error(dil[0], cnt, 1);
+																																																						return (2);
+																																																										}
+																																									}
+
+																												token = strtok(NULL, ":");
+																															free(cats);
+																																	}
+																	free(path_copy);
+																			error(dil[0], cnt, 0);
+																				}
+									return (127);
+}
