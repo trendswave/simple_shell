@@ -4,7 +4,7 @@
  * env - to print the environment variables in the format "variable=value"
  * Description: function iterates through the environ array
  *
- * Return: void
+ * Return: returns void
  */
 
 void env(void)
