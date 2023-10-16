@@ -27,3 +27,4 @@ int exec(pid_t child_pid, char **arr, int cnt);
 int way(char **dil, int cnt);
 char *_genv(const char *var);
 int _how(char *data);
+int way(char **dil, int cnt)
