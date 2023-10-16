@@ -70,6 +70,7 @@ $ echo "qwerty" | ./././hsh
 $
 
 # List of allowed functions and system calls
+
 *access (man 2 access)
 *chdir (man 2 chdir)
 *close (man 2 close)
@@ -100,6 +101,41 @@ $
 *wait4 (man 2 wait4)
 *write (man 2 write)
 
+#compilation
+Your shell will be compiled this way
+
+gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+
+#Testing 
+
+your shell should work like this in the interactive mode:
+
+$ ./hsh
+($) /bin/ls
+hsh main.c shell.c
+($)
+($) exit
+$
+
+But also in non_interactive mode:
+
+$ echo "/bin/ls" | ./hsh
+hsh main.c shell.c test_ls_2
+$
+$ cat test_ls_2
+/bin/ls
+/bin/ls
+$
+$ cat test_ls_2 | ./hsh
+hsh main.c shell.c test_ls_2
+hsh main.c shell.c test_ls_2
+$
+
+#How to use
+
+Run hsh as an executable file. ./hsh 
+
 #Authors
-Ololoda Akintoye
-Paul micheal
+
+([Ololoda Akintoye](....))
+([Paul micheal](thhps://twitter.com/trendswave_c))
