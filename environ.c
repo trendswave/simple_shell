@@ -35,15 +35,15 @@ char *_genv(const char *var)
 
 int _how(char *data)
 {
-        struct stat status;
+	struct stat status;
 
-        while (data)
-        {
-                if (stat(data, &status) == 0)
-                {
-                        return (0);
-                }
-                break;
-        }
-        return (-1);
+	while (data)
+	{
+		if (stat(data, &status) == 0)
+		{
+			return (0);
+		}
+		break;
+	}
+	return (-1);
 }
