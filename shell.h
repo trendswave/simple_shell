@@ -11,13 +11,13 @@
 #include <sys/types.h>
 #include <signal.h>
 /**
-*Struct - This is used to create ennvironmental variables
-*@environ_list - The alias for struct
-*@str: string - This allocates memory
-*@node: this is the pionter to the next node
-*
-* Description:  Node structure of singly linked list
-*/
+ *Struct - This is used to create ennvironmental variables
+ *@environ_list - The alias for struct
+ *@str: string - This allocates memory
+ *@node: this is the pionter to the next node
+ *
+ * Description:  Node structure of singly linked list
+ */
 typedef struct environ_list
 {
 	char *str;
@@ -38,6 +38,7 @@ int str_comp(char **arr, int size);
 void env(void);
 char *str_concat(char *s1, char *s2, int flag);
 void error(char *str, int ln, int flag);
+char *ascii(int p);
 
 
 #endif /* _SHELL_H_ */
