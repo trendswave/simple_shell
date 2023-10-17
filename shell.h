@@ -38,3 +38,6 @@ int str_comp(char **arr, int size);
 void env(void);
 char *str_concat(char *s1, char *s2, int flag);
 void error(char *str, int ln, int flag);
+
+
+#endif /* _SHELL_H_ */
