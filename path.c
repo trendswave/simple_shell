@@ -1,10 +1,11 @@
 #include "shell.h"
 /**
+ * exec - execute a command in a child process.
+ * @child_pid: this is the Process Identifier (ID) of the child.
+ * @arr: array of strings for the command and its arguments.
+ * @cnt: number of arguments in @arr.
  *
- *
- *
- *
- *
+ * Return: exit the status of the child process.
  */
 int exec(pid_t child_pid, char **arr, int cnt)
 {
@@ -43,8 +44,8 @@ int exec(pid_t child_pid, char **arr, int cnt)
 	return (0);
 }
 /**
- *way - Thos is function that handles path 
- *Takes the command that was typed in the shell, checks
+ *way - This function handles path.
+ *Takes: the command that was typed in the shell, checks
  *in which directory inside PATH the command is located and
  *executes the command.
  *@dil: an array of string pointers.
@@ -93,7 +94,7 @@ int way(char **dil, int cnt)
 				else
 				{
 					/* files exist, but access is denied */
-					error(dil[0], cnt, 1);
+					error(dil[0],  cnt, 1);
 					return (2);
 				}
 			}

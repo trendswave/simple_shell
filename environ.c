@@ -1,9 +1,12 @@
 #include "shell.h"
 
 /**
- * 
+ * _genv - this searches for the environment variable.
+ * @var: this is name of the environment variable to search.
  *
- * 
+ * Return: this is the pointer to the value of the environment.
+ * variable or NULL if variable is not found.
+ *
  */
 char *_genv(const char *var)
 {
@@ -28,11 +31,12 @@ char *_genv(const char *var)
 	return (NULL);
 }
 /**
+ * _how - to check if a file or directory exists.
+ * @data: this is the path to the file or directory to check.
  *
- *
- *
+ * Return: returns zero(0) if the file or directory exists,
+ * otherwise -1.
  */
-
 int _how(char *data)
 {
 	struct stat status;
