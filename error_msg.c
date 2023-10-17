@@ -10,11 +10,15 @@ void error(char *str, int ln, int flag)
 {
 	char *counter = NULL;
 	char *fcn = _genv("_");
-	
 	counter = ascii(ln);
 	write(STDERR_FILENO, fcn, _strlen(fcn));
 	write(STDERR_FILENO, ": ", 2);
 	write(STDERR_FILENO, counter, _strlen(counter));
 	write(STDERR_FILENO, ": ", 2);
 	write(STDERR_FILENO, str, _strlen(str));
+	if (flag == 0)
+		write(STDERR_FILENO, ": command not found\n", 13);
+	else if (flag == 1)
+		perror(" ");
+	free(counter);
 }
