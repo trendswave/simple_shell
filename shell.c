@@ -11,7 +11,7 @@ void sighand(int signum)
 }
 /**
 * main - The entry point of the  simple shell program
-* Return: 0 always successful
+* Return: returns 0 always successful
 */
 int main(void)
 {
@@ -48,7 +48,7 @@ int main(void)
 		}
 		if (buff && buff[0] != '\n')
 		{
-			/* checks the  length of  input */
+			/* check the  length of  input */
 			len = _strlen(buff);
 			if (buff[len - 1] == '\n')
 				buff[len - 1] = '\0';
