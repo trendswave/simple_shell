@@ -39,6 +39,7 @@ void env(void);
 char *str_concat(char *s1, char *s2, int flag);
 void error(char *str, int ln, int flag);
 char *ascii(int p);
-
+int tstring(char *link);
+char **tokn(char *link);
 
 #endif /* _SHELL_H_ */
