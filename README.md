@@ -140,4 +140,4 @@ Run hsh as an executable file. ./hsh
 
 ([Babatunde Oladunjoye](https://twitter.com/oladunjoye23301))
 <br>
-([Paul micheal](https://twitter.com/trendswave_c))
+([Paul Micheal](https://twitter.com/trendswave_c))
