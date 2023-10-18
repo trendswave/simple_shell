@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * env - to print the environment variables in the format "variable=value"
+ * env - to print the environment variables in the format "variable = value"
  * Description: function iterates through the environ array
  *
- * Return: returns void
+ * Return:this function does not returns a value.
  */
 
 void env(void)
@@ -13,7 +13,7 @@ void env(void)
 
 	while (environ[j])
 	{
-		/* print in form of "variable=value" */
+		/* print in form of "variable = value" */
 		write(STDOUT_FILENO, environ[j], _strlen(environ[j]));
 		j++;
 		write(STDOUT_FILENO, "\n", 1);
