@@ -6,7 +6,6 @@
  *
  * Return: this is the pointer to the value of the environment.
  * variable or NULL if variable is not found.
- *
  */
 char *_genv(const char *var)
 {
