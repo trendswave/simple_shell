@@ -9,7 +9,7 @@ char *stringdup(const char *str)
 {
 	int i, j;
 	char *ptr;
-	
+
 	if (str == NULL)
 		return (NULL);
 	for (i = 0; str[i] != '\0'; i++)
@@ -29,7 +29,7 @@ char *stringdup(const char *str)
 int _strlen(char *s)
 {
 	int i;
-	
+
 	for (i = 0; s[i] != '\0'; i++)
 		continue;
 	return (i);
@@ -45,7 +45,7 @@ int str_comp(char **arr, int size)
 	char *command[4] = {"exit", "env", ".", NULL};
 	char *ptr = arr[0];
 	int i = 0, j = 0, flag = 0;
-	
+
 	if (size != 1)
 		return (-1);
 	if (!ptr)

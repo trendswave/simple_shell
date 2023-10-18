@@ -45,21 +45,21 @@ char *ascii(int p)
 		/* append the converted highest's place int into the string */
 		s[check++] = ((q / red) + '0');
 
-		/* if x is greater than or equal to 10 */
+		/* if x is upto or equal to 10 */
 		while (red >= 10)
 		{
-			/* move backward through number */
+			/* move >> through number */
 			red = red / 10;
-			/* append converted numbers into the string */
+			/*insert converted numbers into the string */
 			s[check++] = (((q / red) % 10)  + '0');
 		}
 
 	}
-	/* else if x is a single digit, convert and append to string */
+	/* else if x is a single digit, convert and insert to string */
 	else
 		s[check++] = q + '0';
 
-	/* append null */
+	/* insert null */
 	s[check] = 0;
 	return (s);
 }
