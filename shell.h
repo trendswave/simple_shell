@@ -11,8 +11,9 @@
 #include <sys/types.h>
 #include <signal.h>
 /**
- *Struct - This is used to create ennvironmental variables
- *@environ_list - The alias for struct
+ *struct environ_list - this is the node structure for
+ *the environment variable list
+ *environ_list - The alias for struct
  *@str: string - This allocates memory
  *@node: this is the pionter to the next node
  *

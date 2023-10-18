@@ -138,6 +138,6 @@ Run hsh as an executable file. ./hsh
 
 ## Authors
 
-([Ololoda Akintoye](....))
+([Babatunde Oladunjoye](https://twitter.com/oladunjoye23301))
 <br>
 ([Paul micheal](https://twitter.com/trendswave_c))
