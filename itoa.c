@@ -4,8 +4,8 @@
  * @p: integer(int) given to be converted.
  * Return: Returns pointer to the new string.
  *
+ *
  */
-
 char *ascii(int p)
 {
 
@@ -13,7 +13,7 @@ char *ascii(int p)
 	int check, red;
 	char *s;
 
-	/* creating space for max/min int character string */
+	/* create space for max/min int character string. */
 	s = malloc(sizeof(char) * 12);
 	/* if string passed is NULL, return NULL */
 	if (s == NULL)
