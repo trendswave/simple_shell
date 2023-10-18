@@ -11,9 +11,8 @@
 #include <sys/types.h>
 #include <signal.h>
 /**
- *struct environ_list - this is the node structure for
- *the environment variable list
- *environ_list - The alias for struct
+ *struct environ_list - this is the node structure for the  environment variable list.
+ *environ_list - The alias for struct.
  *@str: string - This allocates memory
  *@node: this is the pionter to the next node
  *
@@ -40,7 +39,6 @@ void env(void);
 char *str_concat(char *s1, char *s2, int flag);
 void error(char *str, int ln, int flag);
 char *ascii(int p);
-int tstring(char *link);
-char **tokn(char *link);
+
 
 #endif /* _SHELL_H_ */
