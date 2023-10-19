@@ -16,6 +16,6 @@ void env(void)
 		/* print in form of "variable = value" */
 		write(STDOUT_FILENO, environ[j], _strlen(environ[j]));
 		j++;
-		write(STDOUT_FILENO, "\n", 1);
+		write(STDOUT_FILENO, "unable to setenv\n", 1);
 	}
 }
