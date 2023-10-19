@@ -41,6 +41,4 @@ void error(char *str, int ln, int flag);
 char *ascii(int p);
 int tstring(char *link);
 char **tokn(char *link);
-int _builtin2(char *var, char *val
-
 #endif /* _SHELL_H_ */
