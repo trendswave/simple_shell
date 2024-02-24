@@ -138,6 +138,6 @@ Run hsh as an executable file. ./hsh
 
 ## Authors
 
-([Babatunde Oladunjoye](https://twitter.com/oladunjoye23301))
+([Babatunde Oladunjoye](https://twitter.com/oladunjoye23301))🙏
 <br>
-([Paul Micheal](https://twitter.com/trendswave_c))
+([Paul Micheal](https://twitter.com/trendswave_c))🙏
